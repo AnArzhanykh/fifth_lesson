@@ -5,7 +5,7 @@
 
     --secondary-color: #212121;
 
-    --active-color : #2196F3;
+    --active-color: #2196F3;
 
     --section-color: #F5F4FA;
 
@@ -14,6 +14,8 @@
     --footer-address-color: rgba(255, 255, 255, 0.6);
 
     --icon-color: #AFB1B8;
+
+    --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -118,16 +120,29 @@ nav{
 
 .site-nav .item {
     margin-right: 50px;
+    position: relative;
 }
 
 .site-nav .item:last-child{
     margin-right: 0px;
 }
 
+.link.active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0px;
+    display: block;
+    background-color: var(--active-color);
+    border-radius: 2px;
+}
+
 .site-nav .link {
     text-decoration: none;
     color: var(--secondary-color);  
     letter-spacing: 0.02em;
+    transition: 250ms color var(--main-animation);
 }
 
 
@@ -158,6 +173,7 @@ nav{
     color: var(--primary-color);
     text-decoration: none;
     letter-spacing: 0.02em;
+    transition: 250ms color var(--main-animation);
 }
 
 .contacts .icon--contacts{
@@ -356,6 +372,7 @@ nav{
 
 .team .icon{
     color: var(--icon-color);
+    transition: 250ms fill var(--main-animation), 250ms background-color var(--main-animation);
 }
 
 .team .icon:hover{
@@ -385,6 +402,7 @@ nav{
     padding-bottom: 22px;
     border: solid var(--icon-color);
     color: var(--icon-color);
+    transition: 250ms color var(--main-animation) , 250ms border var(--main-animation);
 }
 
 .clients .icon-color{
@@ -424,7 +442,8 @@ nav{
     line-height: 1.62;
     border-radius: 4px;
     margin-right: 8px;
-    background-color: var(--section-color)
+    background-color: var(--section-color);
+    transition: 250ms color var(--main-animation) , 250ms background-color var(--main-animation); 
 }
 
 .portfolio .card{
@@ -470,6 +489,7 @@ nav{
     margin-right: 30px;
     margin-bottom: 30px;
     padding-bottom: 20px;
+    transition: 250ms color var(--main-animation) , 250ms box-shadow var(--main-animation); 
 }
 
 .portfolio .item:hover{
@@ -572,6 +592,7 @@ nav{
 
 .invate .social {
     margin-right: 10px;
+    transition: 250ms border-radius var(--main-animation), 250ms background-color var(--main-animation);
 
 }
 
