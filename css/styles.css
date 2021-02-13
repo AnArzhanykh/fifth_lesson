@@ -652,7 +652,7 @@ nav{
 
 .footer .title {
     display: block;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: 14px;
     text-transform: uppercase;
 }
