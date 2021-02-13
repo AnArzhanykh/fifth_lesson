@@ -44,7 +44,7 @@
         <main>
             <section class="section hero">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button">Заказать услугу</button>
+                <button class="button" data-modal-open>Заказать услугу</button>
             </section>
 
             <section class="section features">
@@ -444,5 +444,15 @@
                 </div>
             </div>
         </footer>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+                <button class="button" data-modal-close>Отправить</button>    
+            </div>           
+        </div>
+
+        <script src="./js/modal.js"></script>
+
     </body>
 </html>
