@@ -66,6 +66,7 @@ h1, h2, h3, h4,h5, h6 {
     border-color: transparent;
     color: var(--hero-color);
     background-color: var(--active-color);
+    cursor: pointer;
 
 }
 
@@ -143,6 +144,7 @@ h1, h2, h3, h4,h5, h6 {
     letter-spacing: 0.06em;
     padding-left: 55px;
     padding-right: 55px;
+    cursor: pointer;
 }
 
 /* NAV */
@@ -286,6 +288,7 @@ nav{
     letter-spacing: 0.06em;
     line-height: 1.87;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 
@@ -515,6 +518,8 @@ nav{
 
 .portfolio .card{
     text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
 }
 
 .portfolio .card:hover .description,
@@ -570,7 +575,6 @@ nav{
     border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
-    padding-bottom: 20px;
     transition: color  250ms var(--main-animation) , box-shadow  250ms var(--main-animation); 
 }
 
@@ -718,6 +722,7 @@ nav{
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 
     border: 0 solid transparent;
     border-radius: 4px;
